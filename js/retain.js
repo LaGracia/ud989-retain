@@ -18,6 +18,7 @@ $(function(){
             data.push(obj);
             localStorage.notes = JSON.stringify(data);
         },
+
         // Fetch all JSON objects (i.e., notes) from local storage
         getAllNotes: function() {
             return JSON.parse(localStorage.notes);
@@ -61,6 +62,7 @@ $(function(){
             });
             view.render();
         },
+        
         // Update by creating a list with submitted notes and their dates
         render: function(){
             var htmlStr = '';
